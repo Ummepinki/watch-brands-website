@@ -1,10 +1,14 @@
 
 import './App.css';
+import Header from './Components/Header/Header';
+import Shop from './Components/Shop/Shop';
 
 function App() {
   return (
     <div className="App">
-      <h1>The Top Watch Brands</h1>
+      <Header></Header>
+      <Shop></Shop>
+
     </div>
   );
 }

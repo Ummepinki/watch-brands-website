@@ -12,6 +12,32 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
 
+
+    const chooseOne = () => {
+        console.log('jk');
+
+        if (cart.length === 0) {
+            return
+        }
+        const number = Math.floor(Math.random() * cart.length);
+        console.log(cart);
+        const newCart = [cart[number]];
+        setCart(newCart);
+
+    }
+
+
+
+    const reset = () => {
+
+        const newCart = [];
+        setCart(newCart);
+
+    }
+
+
+
+
     const handleAddToCart = (product) => {
         // console.log(product);
         const newCart = [...cart, product];
@@ -30,12 +56,20 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h4>show watch</h4>
-                <p>Brand name: {cart.length}</p>
-                <button className='btn-cart2'>
-                    Choose 1 for Me
+                <h4>Show Watch</h4>
+                <div>
+                    {
+                        cart.map(product => <p>
+                            {product.name}
+                        </p>)
+                    }
+                </div>
+
+
+                <button onClick={() => chooseOne()} className='btn-cart2'>
+                    Choose One For Me
                 </button><br></br>
-                <button className='btn-cart2'> Choose Again</button>
+                <button onClick={() => reset()} className='btn-cart2'> Choose Again</button>
 
 
             </div>

@@ -1,10 +1,12 @@
 .header{
     height: 80px;
-    background-color: grey;
+    background-color: #c73939;
    align-items: center;
+   
   
 }
 .header h1{
     font-weight: 20px;
     font-size: 40px;
+    padding-top:10px;
 }

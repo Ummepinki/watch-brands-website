@@ -25,12 +25,18 @@ const Shop = () => {
                         key={product.id}
                         product={product}
                         handleAddToCart={handleAddToCart}
+
                     ></Product>)
                 }
             </div>
             <div className="cart-container">
                 <h4>show watch</h4>
                 <p>Brand name: {cart.length}</p>
+                <button className='btn-cart2'>
+                    Choose 1 for Me
+                </button><br></br>
+                <button className='btn-cart2'> Choose Again</button>
+
 
             </div>
         </div>

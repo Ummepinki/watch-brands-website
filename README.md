@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+Lucky One
+Live Link: https://darling-genie-1c2f20.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

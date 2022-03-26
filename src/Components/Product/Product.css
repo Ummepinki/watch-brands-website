@@ -3,7 +3,7 @@
     height: 510px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
-    
+    position: relative;
     
 }
  .product-info{
@@ -34,7 +34,11 @@
        background: #FFE0B3;
        border-radius: 0px 0px 8px 8px ;
        border: 0;
-       bottom: 0;
+        bottom: 0;
+       display:flex;
+       position: absolute;
+       align-items: center;
+       justify-content: center;
     
       
    }
